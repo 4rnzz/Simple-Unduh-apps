@@ -6,19 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import Link from "next/link"
-import {
-  Download,
-  Star,
-  Users,
-  Search,
-  Menu,
-  X,
-  Gamepad2,
-  ChevronRight,
-  Award,
-  Smartphone,
-  MoreVertical,
-} from "lucide-react"
+import { Download, Star, Users, Search, Menu, X, Gamepad2, Award, Smartphone, MoreVertical } from "lucide-react"
 
 interface AppData {
   name: string
@@ -84,7 +72,6 @@ export default function PremiumDashboard() {
           </div>
           <div className="space-y-2">
             <p className="text-white text-xl font-semibold">FF BETA</p>
-            <p className="text-gray-400">Loading...</p>
           </div>
         </div>
       </div>
@@ -297,20 +284,7 @@ export default function PremiumDashboard() {
       </section>
 
       {/* Search Section */}
-      <section className="py-8 bg-gray-900/30">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative max-w-2xl mx-auto">
-            <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
-            <input
-              type="text"
-              placeholder="Search apps..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full pl-12 pr-4 py-4 bg-gray-800/50 border border-gray-700/50 text-white placeholder-gray-400 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/20 rounded-2xl backdrop-blur-sm transition-all duration-300"
-            />
-          </div>
-        </div>
-      </section>
+      
 
       {/* Apps List */}
       <section className="py-12">
@@ -318,10 +292,7 @@ export default function PremiumDashboard() {
           {/* Apps List Header */}
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-8">
             <div>
-              <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-2">
-                Available Apps
-              </h2>
-              <p className="text-gray-400">Discover premium gaming applications</p>
+              
             </div>
             <div className="flex items-center space-x-4 mt-4 sm:mt-0">
               <Badge className="bg-gray-800/50 text-gray-300 border-gray-700/50">
@@ -363,19 +334,15 @@ export default function PremiumDashboard() {
                             </h3>
                           </Link>
                           <p className="text-gray-400 text-sm">
-                            <span className="text-purple-400 font-medium">{appData.authors}</span> • Gaming • Premium
+                            <span className="text-purple-400 font-medium">{appData.authors}</span> • Premium
                           </p>
-                          
+
                           <div className="flex items-center space-x-4 mt-2">
                             <Badge className="bg-gray-800/50 text-gray-300 border-0 text-xs">v{app.version}</Badge>
-                            
-                            
                           </div>
                         </div>
                         <div className="flex items-center space-x-2">
-                          <Link href={`/download?app=${index}`}>
-                            
-                          </Link>
+                          <Link href={`/download?app=${index}`}></Link>
                           <Button variant="ghost" size="sm" className="text-gray-400 hover:text-white">
                             <MoreVertical className="h-4 w-4" />
                           </Button>
@@ -411,50 +378,15 @@ export default function PremiumDashboard() {
 
       <footer className="bg-gray-900/50 border-t border-gray-800/50 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4">
-            {/* About Section */}
-            <div>
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
-                  <Gamepad2 className="h-6 w-6 text-white" />
-                </div>
-                <h4 className="font-semibold text-white">{appData.name}</h4>
+          <div className="text-center space-y-4">
+            <div className="flex items-center justify-center space-x-3">
+              <div className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
+                <Gamepad2 className="h-6 w-6 text-white" />
               </div>
-              <p className="text-gray-400 text-sm mb-6">
-                {appData.name} is your ultimate destination for premium gaming apps. We curate the best gaming
-                experiences for mobile and desktop.
-              </p>
+              <h4 className="font-semibold text-white">{appData?.name}</h4>
             </div>
-
-            {/* Quick Links */}
-            {[
-              { title: "Platform", links: ["Dashboard", "Apps", "Analytics", "API"] },
-              { title: "Support", links: ["Help Center", "Contact", "Bug Report", "Feature Request"] },
-              { title: "Legal", links: ["Privacy Policy", "Terms of Service", "DMCA", "Disclaimer"] },
-            ].map((section, index) => (
-              <div key={index}>
-                <h4 className="font-semibold text-white mb-6">{section.title}</h4>
-                <ul className="space-y-3">
-                  {section.links.map((link) => (
-                    <li key={link}>
-                      <a
-                        href="#"
-                        className="text-gray-400 hover:text-white transition-colors text-sm flex items-center group"
-                      >
-                        <ChevronRight className="h-4 w-4 mr-2 group-hover:translate-x-1 transition-transform" />
-                        {link}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-
-          <Separator className="my-8 bg-gray-800/50" />
-
-          <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-            <p className="text-gray-400 text-sm">© 2025 {appData.name}. All rights reserved.</p>
+            <Separator className="my-8 bg-gray-800/50" />
+            <p className="text-gray-400 text-sm">© 2025 {appData?.name}. All rights reserved.</p>
           </div>
         </div>
       </footer>
