@@ -20,14 +20,12 @@ import {
   Unlock,
   CheckCircle,
   ExternalLink,
-  Share2,
   Gamepad2,
   Youtube,
   MessageCircle,
   Instagram,
   Globe,
   FileText,
-  Clock,
   ChevronRight,
 } from "lucide-react"
 
@@ -128,7 +126,7 @@ function DownloadPageContent() {
         newSteps[stepIndex] = true
         return newSteps
       })
-    }, 3000) 
+    }, 3000)
   }
 
   const handleDownload = (downloadUrl: string) => {
@@ -158,8 +156,7 @@ function DownloadPageContent() {
             <div className="w-20 h-20 border-4 border-purple-500/30 border-t-purple-500 rounded-full animate-spin mx-auto"></div>
           </div>
           <div className="space-y-2">
-            <p className="text-white text-xl font-semibold">Loading App Details</p>
-            <p className="text-gray-400">Please wait...</p>
+            <p className="text-white text-xl font-semibold">FF BETA</p>
           </div>
         </div>
       </div>
@@ -222,16 +219,16 @@ function DownloadPageContent() {
             {/* App Thumbnail */}
             <div className="space-y-6">
               <div className="relative overflow-hidden rounded-3xl bg-gray-900/40 border border-gray-800/50 backdrop-blur-sm">
-                <div className="aspect-[4/5] overflow-hidden">
-                  <img
-                    src={currentApp.thumb || "/placeholder.svg?height=600&width=480"}
-                    alt={currentApp.name}
-                    className="w-full h-full object-cover"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement
-                      target.src = "/placeholder.svg?height=600&width=480"
-                    }}
-                  />
+                <div className="aspect-[4/5] overflow-hidden bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center">
+                  <div className="text-center space-y-4">
+                    <div className="w-24 h-24 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mx-auto">
+                      <Gamepad2 className="h-12 w-12 text-white" />
+                    </div>
+                    <div className="space-y-2">
+                      <h3 className="text-2xl font-bold text-white">{currentApp.name}</h3>
+                      <p className="text-gray-300">Gaming Application</p>
+                    </div>
+                  </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 </div>
               </div>
@@ -259,15 +256,9 @@ function DownloadPageContent() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
-                  <img
-                    src={currentApp.icon || "/placeholder.svg"}
-                    alt={currentApp.name}
-                    className="w-16 h-16 rounded-2xl border border-gray-700/50"
-                    onError={(e) => {
-                      const target = e.target as HTMLImageElement
-                      target.src = "/placeholder.svg?height=64&width=64"
-                    }}
-                  />
+                  <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center">
+                    <Gamepad2 className="h-8 w-8 text-white" />
+                  </div>
                   <div>
                     <h1 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                       {currentApp.name}
@@ -287,7 +278,7 @@ function DownloadPageContent() {
                   </div>
                 </div>
 
-                <p className="text-gray-300 text-lg leading-relaxed">{currentApp.desk}</p>
+                
               </div>
 
               {/* Unlock Progress */}
@@ -321,9 +312,7 @@ function DownloadPageContent() {
 
                   {!isFullyUnlocked && (
                     <div className="space-y-4">
-                      <p className="text-gray-400">
-                        Complete all 5 steps below to unlock the download. Each step helps support our community!
-                      </p>
+                      
 
                       <Button
                         onClick={() => setShowUnlockSteps(!showUnlockSteps)}
@@ -379,19 +368,6 @@ function DownloadPageContent() {
                           ))}
                         </div>
                       )}
-
-                      <div className="bg-gray-800/50 rounded-lg p-4">
-                        <h4 className="text-white font-semibold mb-2 flex items-center">
-                          <Clock className="h-4 w-4 mr-2" />
-                          How to unlock:
-                        </h4>
-                        <ol className="text-gray-400 text-sm space-y-1">
-                          <li>1. Click "Show Unlock Steps" above</li>
-                          <li>2. Complete each step by clicking the buttons</li>
-                          <li>3. Wait for each step to be verified (3 seconds)</li>
-                          <li>4. Once all 5 steps are complete, download will be available</li>
-                        </ol>
-                      </div>
                     </div>
                   )}
 
@@ -423,58 +399,13 @@ function DownloadPageContent() {
                   )}
                 </CardContent>
               </Card>
-
-              {/* Additional Actions */}
-              <div className="flex items-center space-x-4">
-                
-              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Features Section */}
-      <section className="py-16 bg-gray-900/30">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-8 text-center">
-            App Features
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              {
-                icon: <Zap className="h-8 w-8" />,
-                title: "High Performance",
-                description: "Optimized for 120fps gaming with minimal lag",
-                color: "from-yellow-400 to-orange-500",
-              },
-              {
-                icon: <Shield className="h-8 w-8" />,
-                title: "Anti-Cheat Protection",
-                description: "Advanced security to prevent cheating and hacks",
-                color: "from-green-400 to-emerald-500",
-              },
-              {
-                icon: <Smartphone className="h-8 w-8" />,
-                title: "Device Optimized",
-                description: "Works perfectly on all Android devices",
-                color: "from-blue-400 to-cyan-500",
-              },
-            ].map((feature, index) => (
-              <Card key={index} className="bg-gray-900/40 border-gray-800/50 backdrop-blur-sm">
-                <CardContent className="p-6 text-center space-y-4">
-                  <div
-                    className={`w-16 h-16 bg-gradient-to-r ${feature.color} rounded-2xl flex items-center justify-center mx-auto`}
-                  >
-                    {feature.icon}
-                  </div>
-                  <h3 className="text-xl font-bold text-white">{feature.title}</h3>
-                  <p className="text-gray-400">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Footer */}
       <footer className="bg-gray-900/50 border-t border-gray-800/50 backdrop-blur-sm">
@@ -486,10 +417,6 @@ function DownloadPageContent() {
               </div>
               <h4 className="font-semibold text-white">{appData?.name}</h4>
             </div>
-            <p className="text-gray-400 text-sm max-w-2xl mx-auto">
-              Your ultimate destination for premium gaming apps. We curate the best gaming experiences for mobile and
-              desktop.
-            </p>
             <Separator className="my-8 bg-gray-800/50" />
             <p className="text-gray-400 text-sm">© 2024 {appData?.name}. All rights reserved.</p>
           </div>
