@@ -1,11 +1,10 @@
-import Head from "next/head"
+// app/layout.tsx
 import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
   title: "FF BETA",
   description: `Unduh aplikasi Free Fire Beta secara gratis dan resmi. FF BETA adalah platform terpercaya untuk mengakses versi terbaru Free Fire sebelum dirilis ke publik. Dapatkan pembaruan lebih awal, uji fitur baru, dan nikmati pengalaman bermain yang lebih seru!`,
-  generator: "",
   icons: {
     icon: "https://files.catbox.moe/o6tznl.ico",
     shortcut: "https://files.catbox.moe/o6tznl.ico",
@@ -18,16 +17,18 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: ["https://files.catbox.moe/dq3sr2.png"],
   },
+  other: {
+    monetag: "20fd7ff6884df4f66f8d228c68e166be", 
+  }
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode }>) {
+}: Readonly<{
+  children: React.ReactNode
+}>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-      <meta name="monetag" content="20fd7ff6884df4f66f8d228c68e166be"/>
-      </Head>
       <body>
         <div className="relative min-h-screen">
           {children}
