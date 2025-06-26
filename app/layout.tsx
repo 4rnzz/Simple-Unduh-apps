@@ -1,10 +1,10 @@
+import Head from "next/head"
 import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
   title: "FF BETA",
-  description: "Unduh aplikasi Free Fire Beta secara gratis dan resmi. FF BETA adalah platform terpercaya untuk mengakses versi terbaru Free Fire sebelum dirilis ke publik. Dapatkan pembaruan lebih awal, uji fitur baru, dan nikmati pengalaman bermain yang lebih seru!
-",
+  description: `Unduh aplikasi Free Fire Beta secara gratis dan resmi. FF BETA adalah platform terpercaya untuk mengakses versi terbaru Free Fire sebelum dirilis ke publik. Dapatkan pembaruan lebih awal, uji fitur baru, dan nikmati pengalaman bermain yang lebih seru!`,
   generator: "",
   icons: {
     icon: "https://files.catbox.moe/o6tznl.ico",
@@ -25,11 +25,8 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-      </Head>
-      <body className={inter.className}>
+      <body>
         <div className="relative min-h-screen">
-          <AnimatedBackground variant="default" opacity={0.08} duration={30} />
           {children}
         </div>
       </body>
