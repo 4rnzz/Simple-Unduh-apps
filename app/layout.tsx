@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     images: ["https://files.catbox.moe/dq3sr2.png"],
   },
   other: {
-    monetag: "20fd7ff6884df4f66f8d228c68e166be", 
+    monetag: "20fd7ff6884df4f66f8d228c68e166be",
   }
 }
 
@@ -30,14 +30,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Meta verifikasi Hilltopads */}
+        <meta
+          name="95714a6c65a8ac999686234344e9d5786ecf727c"
+          content="95714a6c65a8ac999686234344e9d5786ecf727c"
+        />
+        <meta name="referrer" content="no-referrer-when-downgrade" />
+      </head>
       <body>
         <Script id="monetag-script" strategy="afterInteractive">
           {`
             (function(d,z,s){
               s.src='https://'+d+'/401/'+z;
-              try{
-                (document.body || document.documentElement).appendChild(s)
-              } catch(e){}
+              try {
+                (document.body || document.documentElement).appendChild(s);
+              } catch(e) {}
             })('groleegni.net', 9495292, document.createElement('script'));
           `}
         </Script>
