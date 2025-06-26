@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <Head>
-      <meta name="monetag" content="20fd7ff6884df4f66f8d228c68e166be">
+      <meta name="monetag" content="20fd7ff6884df4f66f8d228c68e166be"/>
       </Head>
       <body>
         <div className="relative min-h-screen">
