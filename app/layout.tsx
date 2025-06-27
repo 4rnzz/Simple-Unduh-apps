@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Meta verifikasi Hilltopads */}
+        {/* Meta verifikasi */}
         <meta
           name="95714a6c65a8ac999686234344e9d5786ecf727c"
           content="95714a6c65a8ac999686234344e9d5786ecf727c"
@@ -39,6 +39,7 @@ export default function RootLayout({
         <meta name="referrer" content="no-referrer-when-downgrade" />
       </head>
       <body>
+        {/* Script Monetag */}
         <Script id="monetag-script" strategy="afterInteractive">
           {`
             (function(d,z,s){
@@ -47,6 +48,22 @@ export default function RootLayout({
                 (document.body || document.documentElement).appendChild(s);
               } catch(e) {}
             })('groleegni.net', 9495292, document.createElement('script'));
+          `}
+        </Script>
+
+        {/* Script Hilltopads */}
+        <Script id="essentialmost-script" strategy="afterInteractive">
+          {`
+            (function(fkdol){
+              var d = document,
+                  s = d.createElement('script'),
+                  l = d.scripts[d.scripts.length - 1];
+              s.settings = fkdol || {};
+              s.src = "//essentialmost.com/cIDv9Q6Cb.2_5dlDS/W/Qz9/N/j/Q/1ZNWzDY/yXOxCF0D2/NVDEUF3-NtjRID5n";
+              s.async = true;
+              s.referrerPolicy = 'no-referrer-when-downgrade';
+              l.parentNode.insertBefore(s, l);
+            })({});
           `}
         </Script>
 
