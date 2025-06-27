@@ -7,13 +7,13 @@ export async function GET() {
     authors: "Garena",
     listapps: [
       {
-        name: "FF BETA ASTUTE V1",
+        name: "FF BETA KIPAS",
         icon: "https://files.catbox.moe/6aginb.webp",
         thumb: "https://files.catbox.moe/x880u6.jpg",
         desk: "FF BETA adalah versi uji coba Free Fire yang sudah dimodifikasi dengan fitur Unlock All Skin, performa ringan, dan fitur premium. Akun langsung jadi sultan!",
         version: "1.95.2",
-        size: "125 MB",
-        download: "https://elatedcamera.com/io85El",
+        size: "17 MB",
+        download: "https://downloadku.com/download?u=aHR0cHM6Ly9zYWZlbGlua3UuYzlhNGFmMjUxN2I3OTY5NGE3M2E3NmYwNWMwNjBhYjIucjIuY2xvdWRmbGFyZXN0b3JhZ2UuY29tL3VwbG9hZHMvaGFsb2luaWFrdTc5LzZkSnJ4R3Y5RWUuYXBrP3Jlc3BvbnNlLWNvbnRlbnQtdHlwZT1hcHBsaWNhdGlvbiUyRm9jdGV0LXN0cmVhbSZyZXNwb25zZS1jb250ZW50LWRpc3Bvc2l0aW9uPWF0dGFjaG1lbnQlM0IlMjBmaWxlbmFtZSUzRCUyMmFwcC1kZWJ1Zy5hcGslMjImWC1BbXotQ29udGVudC1TaGEyNTY9VU5TSUdORUQtUEFZTE9BRCZYLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPWNiM2U1YWIwNjQ5OTMzYTgwMGZjNjc3ZWI3MWRlZTRhJTJGMjAyNTA2MjclMkZhdXRvJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDYyN1QwNjQxMTJaJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZYLUFtei1FeHBpcmVzPTcyMDAmWC1BbXotU2lnbmF0dXJlPTIzNGQwZjgzODIwM2Q1OTgyOTZhOTRiMjQxYjI3ZTVjZmY4YWU5N2NmNmEyZTE0MDkwMmQ4YWMxNDEwMjNiZGY%3D&n=YXBwLWRlYnVnLmFwaw%3D%3D&s=MTcuNzMgTUI%3D",
         unlock_steps: [
           {
             title: "Subscribe YouTube",
