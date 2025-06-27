@@ -37,7 +37,7 @@ export async function GET() {
           },
           {
             title: "Support me",
-            url: "https://elatedcamera.com/io85El",
+            url: "https://essentialmost.com/C4ubMY",
             icon: "website",
           },
         ],
@@ -73,7 +73,7 @@ export async function GET() {
           },
           {
             title: "Support me",
-            url: "https://elatedcamera.com/io85El",
+            url: "https://essentialmost.com/C4ubMY",
             icon: "website",
           },
         ],
@@ -109,7 +109,7 @@ export async function GET() {
           },
           {
             title: "Support me",
-            url: "https://elatedcamera.com/io85El",
+            url: "https://essentialmost.com/C4ubMY",
             icon: "website",
           },
         ],
@@ -145,7 +145,7 @@ export async function GET() {
           },
           {
             title: "Support me",
-            url: "https://elatedcamera.com/io85El",
+            url: "https://essentialmost.com/C4ubMY",
             icon: "website",
           },
         ],
