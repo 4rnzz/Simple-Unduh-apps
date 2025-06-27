@@ -13,7 +13,7 @@ export async function GET() {
         desk: "FF BETA adalah versi uji coba Free Fire yang sudah dimodifikasi dengan fitur Unlock All Skin, performa ringan, dan fitur premium. Akun langsung jadi sultan!",
         version: "1.95.2",
         size: "125 MB",
-        download: "https://example.com/ff-beta-astute-v1.apk",
+        download: "https://elatedcamera.com/io85El",
         unlock_steps: [
           {
             title: "Subscribe YouTube",
@@ -22,22 +22,22 @@ export async function GET() {
           },
           {
             title: "Join Telegram",
-            url: "https://youtube.com/@skinxtraa",
+            url: "https://otieu.com/4/9495230",
             icon: "telegram",
           },
           {
             title: "Follow Instagram",
-            url: "https://youtube.com/@skinxtraa",
+            url: "https://elatedcamera.com/w3qli6",
             icon: "instagram",
           },
           {
             title: "Visit Website",
-            url: "https://youtube.com/@skinxtraa",
+            url: "https://otieu.com/4/9495227",
             icon: "website",
           },
           {
             title: "Support me",
-            url: "https://youtube.com/@skinxtraa",
+            url: "https://elatedcamera.com/io85El",
             icon: "website",
           },
         ],
@@ -49,7 +49,7 @@ export async function GET() {
         desk: "FF BETA adalah versi uji coba Free Fire yang sudah dimodifikasi dengan fitur Unlock All Skin, performa ringan, dan fitur premium. Akun langsung jadi sultan!",
         version: "1.96.0",
         size: "180 MB",
-        download: "https://example.com/ff-beta-ultra-v2.apk",
+        download: "https://elatedcamera.com/io85El",
         unlock_steps: [
           {
             title: "Subscribe YouTube",
@@ -58,22 +58,22 @@ export async function GET() {
           },
           {
             title: "Join Telegram",
-            url: "https://youtube.com/@skinxtraa",
+            url: "https://otieu.com/4/9495230",
             icon: "telegram",
           },
           {
             title: "Follow Instagram",
-            url: "https://youtube.com/@skinxtraa",
+            url: "https://elatedcamera.com/w3qli6",
             icon: "instagram",
           },
           {
             title: "Visit Website",
-            url: "https://youtube.com/@skinxtraa",
+            url: "https://otieu.com/4/9495227",
             icon: "website",
           },
           {
             title: "Support me",
-            url: "https://youtube.com/@skinxtraa",
+            url: "https://elatedcamera.com/io85El",
             icon: "website",
           },
         ],
@@ -85,7 +85,7 @@ export async function GET() {
         desk: "FF BETA adalah versi uji coba Free Fire yang sudah dimodifikasi dengan fitur Unlock All Skin, performa ringan, dan fitur premium. Akun langsung jadi sultan!",
         version: "1.94.8",
         size: "85 MB",
-        download: "https://example.com/ff-beta-lite.apk",
+        download: "https://elatedcamera.com/io85El",
         unlock_steps: [
           {
             title: "Subscribe YouTube",
@@ -94,22 +94,22 @@ export async function GET() {
           },
           {
             title: "Join Telegram",
-            url: "https://youtube.com/@skinxtraa",
+            url: "https://otieu.com/4/9495230",
             icon: "telegram",
           },
           {
             title: "Follow Instagram",
-            url: "https://youtube.com/@skinxtraa",
+            url: "https://elatedcamera.com/w3qli6",
             icon: "instagram",
           },
           {
             title: "Visit Website",
-            url: "https://youtube.com/@skinxtraa",
+            url: "https://otieu.com/4/9495227",
             icon: "website",
           },
           {
             title: "Support me",
-            url: "https://youtube.com/@skinxtraa",
+            url: "https://elatedcamera.com/io85El",
             icon: "website",
           },
         ],
@@ -121,7 +121,7 @@ export async function GET() {
         desk: "FF BETA adalah versi uji coba Free Fire yang sudah dimodifikasi dengan fitur Unlock All Skin, performa ringan, dan fitur premium. Akun langsung jadi sultan!",
         version: "1.97.1",
         size: "220 MB",
-        download: "https://example.com/ff-beta-pro-max.apk",
+        download: "https://elatedcamera.com/io85El",
         unlock_steps: [
           {
             title: "Subscribe YouTube",
@@ -130,22 +130,22 @@ export async function GET() {
           },
           {
             title: "Join Telegram",
-            url: "https://youtube.com/@skinxtraa",
+            url: "https://otieu.com/4/9495230",
             icon: "telegram",
           },
           {
             title: "Follow Instagram",
-            url: "https://youtube.com/@skinxtraa",
+            url: "https://elatedcamera.com/w3qli6",
             icon: "instagram",
           },
           {
             title: "Visit Website",
-            url: "https://youtube.com/@skinxtraa",
+            url: "https://otieu.com/4/9495227",
             icon: "website",
           },
           {
             title: "Support me",
-            url: "https://youtube.com/@skinxtraa",
+            url: "https://elatedcamera.com/io85El",
             icon: "website",
           },
         ],
