@@ -70,8 +70,6 @@ export default function PremiumDashboard() {
               style={{ animationDirection: "reverse", animationDuration: "1.5s" }}
             ></div>
           </div>
-          <div className="space-y-2">
-            <p className="text-white text-xl font-semibold">FF BETA</p>
           </div>
         </div>
       </div>
