@@ -155,9 +155,6 @@ function DownloadPageContent() {
           <div className="relative">
             <div className="w-20 h-20 border-4 border-purple-500/30 border-t-purple-500 rounded-full animate-spin mx-auto"></div>
           </div>
-          <div className="space-y-2">
-            <p className="text-white text-xl font-semibold">FF BETA</p>
-          </div>
         </div>
       </div>
     )
