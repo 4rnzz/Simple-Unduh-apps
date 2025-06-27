@@ -70,7 +70,6 @@ export default function PremiumDashboard() {
               style={{ animationDirection: "reverse", animationDuration: "1.5s" }}
             ></div>
           </div>
-          </div>
         </div>
       </div>
     )
